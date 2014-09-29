@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head lang="en">
 	<meta charset="utf-8">
 	<title>View More component</title>
+	<script src="js/angular.min.js"></script>
+	<script src="js/controllers.js"></script>
 </head>
 <body>
 
@@ -16,7 +18,8 @@
 </h2>
 
 <!-- Begin: view more component example -->
-<div>
+<div ng-controller="ViewMoreController">
+	greeting: {{greeting.text}}.
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis bibendum augue, sit amet pretium lacus iaculis vitae. Suspendisse lorem felis, luctus non pellentesque sit amet, ultricies non neque. Aliquam volutpat eleifend lorem, vel sagittis mi cursus quis. Fusce tempus et erat eu dictum. Nullam a congue nulla, vel eleifend elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eu gravida ipsum. Suspendisse scelerisque lacus eu ex pharetra sagittis. Nullam sed imperdiet sapien. Maecenas finibus felis nec felis euismod, id tincidunt libero pharetra. Proin viverra hendrerit ipsum, et vulputate eros lobortis ac. Integer commodo finibus dignissim.
 	</p>
@@ -28,7 +31,6 @@
 	</p>
 </div>
 <!-- End: view more component example -->
-
 
 </body>
 
