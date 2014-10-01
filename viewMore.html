@@ -25,6 +25,13 @@ html {
 	width:100%;
 	background:#fff;
 }
+
+.button {
+	position: absolute;
+	text-align: center;
+	width:100%;
+	cursor: pointer;
+}
 </style>
 
 <body>
@@ -49,7 +56,7 @@ html {
 	<p>
 		Vestibulum vitae hendrerit dolor. Morbi congue turpis non diam sollicitudin, eu facilisis mauris posuere. Ut in ante et ante sodales eleifend id sit amet eros. Nunc ac imperdiet mauris. In venenatis blandit nulla, sit amet tristique purus facilisis elementum. Aenean eros enim, suscipit et augue finibus, finibus blandit sapien. Cras eros velit, aliquam sed placerat nec, auctor nec nunc. In sit amet luctus felis. Donec ut auctor velit.
 	</p>
-	<div ng-click="toggle()" ng-model="text.link">
+	<div ng-click="toggle()" ng-model="text.link" class="button">
 		View {{text.link}}
 	</div>
 </div>
