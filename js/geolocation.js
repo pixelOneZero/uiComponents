@@ -6,8 +6,18 @@ geolocator.prototype.constructor = geolocator;
  * @param {string} domId The HTML id value that contains a geolocator instance.
  */
 function geolocator(domId) {
-    if (document.getElementById(domId).length < 1) {
-        alert("Error: domId does not exist. Cannot create player.");
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+        });
+    } 
+    else {
+        alert("Sorry, geolocation services are not supported by your browser.");
+    }
+
+    if (document.getElementById(domId) === null) {
+        document.body.innerHTML="domId provided does not exist.  could not create a locator.";
         return;
     }
 
@@ -16,11 +26,10 @@ function geolocator(domId) {
     var opts;
     
     this.inlineMessage = container.getAttribute("data-inline-message");
+
     console.log("this.isEmbedded: " + this.inlineMessage);
     // Define 'self' variable for use in private functions.
     self = this;
-
-    //this.bind(domId);
 
     function saveCoordinates() {
        self.coordinates;
