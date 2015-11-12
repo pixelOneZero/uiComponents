@@ -7,6 +7,6 @@ var app = {
 }
 
 
-$(document).ready(function() {
+window.addEventListener("load", function() {
 	app.init();
 });
