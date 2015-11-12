@@ -19,3 +19,8 @@ uiModule.controller("ViewMoreController", function($scope) {
 		$scope.state.isCollapsed = !$scope.state.isCollapsed;
 	}
 })
+
+uiModule.controller("SwitchController", function($scope) {
+	
+})
+
