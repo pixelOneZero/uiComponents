@@ -1,0 +1,24 @@
+/* begin switch styles */
+[data-component-type=switch] {
+	background:#ccc;
+	border: 1px solid #999;
+	cursor:pointer;
+	font-size: 1.25em;
+	padding:0;
+	margin:0;
+	width:8.45em;
+}
+[data-component-type=switch]:focus {
+	outline:0;
+}
+[data-component-type=switch] div {
+	display:inline-block;
+	padding:.5em 0 .5em 0;
+	color:#939393;
+	width:4em;
+}
+[data-component-type=switch].on [data-state=on], [data-component-type=switch].off [data-state=off] {
+	visibility:visible;
+	background:#eee;
+	color:#333;
+}

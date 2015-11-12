@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Switch component</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/switch.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 
@@ -16,11 +17,11 @@
 	switch component
 </h2>
 
-<button data-component-type="switch">
-	<div class="active">
+<button data-component-type="switch" class="on">
+	<div data-state="on">
 		on
 	</div>
-	<div>
+	<div data-state="off">
 		off
 	</div>
 </button>

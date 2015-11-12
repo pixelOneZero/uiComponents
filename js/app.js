@@ -1,12 +1,12 @@
-var app = {
+var App = {
 	"name": "UiComponents",
 	"version": 0.1,
 	init: function() {
-		console.log(app.name + " initialized.");
+		console.log(App.name + " initialized.");
 	}
 }
 
 
 window.addEventListener("load", function() {
-	app.init();
+	App.init();
 });
