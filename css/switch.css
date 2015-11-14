@@ -1,12 +1,28 @@
+html {
+		font-family:Helvetica, Sans-serif;
+		font-size:12px;
+	}
+p {
+	margin:5em;
+}
+a {
+	color:#000;
+}
 /* begin switch styles */
 [data-component-type=switch] {
 	background:#ccc;
-	border: 1px solid #999;
+	border: 1px solid #555;
 	cursor:pointer;
-	font-size: 1.25em;
+	font-size: 1em;
 	padding:0;
 	margin:0;
-	width:8.45em;
+	width:4.5em;
+	height:2.25em;
+	position:relative;
+	overflow:hidden;
+}
+[data-component-type=switch].round {
+	border-radius:2.25em;
 }
 [data-component-type=switch]:focus {
 	outline:0;
@@ -14,11 +30,86 @@
 [data-component-type=switch] div {
 	display:inline-block;
 	padding:.5em 0 .5em 0;
-	color:#939393;
-	width:4em;
-}
-[data-component-type=switch].on [data-state=on], [data-component-type=switch].off [data-state=off] {
-	visibility:visible;
-	background:#eee;
 	color:#333;
+	width:2.25em;
+	height:2.25em;
+	z-index:2;
 }
+[data-component-type=switch] .indicator {
+	position:absolute;
+	top:0;
+	left:0;
+	background:#eee;
+	padding:0;
+}
+[data-component-type=switch].round .indicator {
+	border-radius:4.5em;
+	height: 2.1em;
+}
+[data-component-type=switch].round.green {
+	background:#7FAD71;
+}
+[data-component-type=switch].round.green .indicator {
+	border-radius:4.5em;
+	height: 2.1em;
+	background:#A3C997;
+}
+[data-component-type=switch].round.blue {
+	background:#7BA6B5;
+}
+[data-component-type=switch].round.blue .indicator {
+	border-radius:4.5em;
+	height: 2.1em;
+	background:#A5C9D6;
+}
+[data-component-type=switch].round.orange {
+	background:#C7AE69;
+}
+[data-component-type=switch].round.orange .indicator {
+	border-radius:4.5em;
+	height: 2.1em;
+	background:#E3D3A6;
+}
+[data-component-type=switch].on .indicator {
+	-webkit-animation: move_left .2s;
+	-moz-animation: move_left .2s;
+	animation: move_left .2s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+[data-component-type=switch].off .indicator {
+	-webkit-animation: move_right .2s;
+	-moz-animation: move_right .2s;
+	animation: move_right .2s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+[data-component-type=switch] .label {
+	position:absolute;
+}
+[data-component-type=switch] .label.left {
+	left:0;
+	top:0;
+}
+[data-component-type=switch] .label.right {
+	right:0;
+	top:0;
+}
+
+[data-component-type=switch].on [data-label=on], [data-component-type=switch].off [data-label=off] {
+	color:#555;
+}
+
+
+@-webkit-keyframes move_left { from { margin-left:51%; } to { margin-left:0%; }  }
+@-moz-keyframes move_left { from { margin-left:51%; } to { margin-left:0%; }  }
+@-o-keyframes move_left { from { margin-left:51%; } to { margin-left:0%; }  }
+@keyframes move_left { from { margin-left:51%; } to { margin-left:0%; }  }
+
+@-webkit-keyframes move_right { from { margin-left:0%; } to { margin-left:51%; }  }
+@-moz-keyframes move_right { from { margin-left:0%; } to { margin-left:51%; }  }
+@-o-keyframes move_right { from { margin-left:0%; } to { margin-left:51%; }  }
+@keyframes move_right { from { margin-left:0%; } to { margin-left:51%; }  }

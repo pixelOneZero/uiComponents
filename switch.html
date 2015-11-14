@@ -3,7 +3,6 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<title>Switch component</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/switch.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
@@ -14,19 +13,70 @@
 	</h1>
 </header>
 <h2>
-	switch component
+	Switch UI component
 </h2>
 
-<button data-component-type="switch" class="on">
-	<div data-state="on">
+<p>
+	<button data-component-type="switch" class="on">
+		<div class="indicator">
+		</div>
+		<div class="label left" data-label="on">
+			on
+		</div>
+		<div class="label right" data-label="off">
+			off
+		</div>
+	</button>
+</p>
+<p>
+<button data-component-type="switch" class="round on">
+	<div class="indicator">
+	</div>
+	<div class="label left" data-label="on">
 		on
 	</div>
-	<div data-state="off">
+	<div class="label right" data-label="off">
 		off
 	</div>
 </button>
+</p>
+<p>
+<button data-component-type="switch" class="round green on">
+	<div class="indicator">
+	</div>
+	<div class="label left" data-label="on">
+		on
+	</div>
+	<div class="label right" data-label="off">
+		off
+	</div>
+</button>
+</p>
+<p>
+<button data-component-type="switch" class="round blue on">
+	<div class="indicator">
+	</div>
+	<div class="label left" data-label="on">
+		on
+	</div>
+	<div class="label right" data-label="off">
+		off
+	</div>
+</button>
+</p>
+<p>
+<button data-component-type="switch" class="round orange on">
+	<div class="indicator">
+	</div>
+	<div class="label left" data-label="on">
+		on
+	</div>
+	<div class="label right" data-label="off">
+		off
+	</div>
+</button>
+</p>
 
-<script src="js/app.js"></script>
 <script src="js/switch.js"></script>
 </body>
 </html>
