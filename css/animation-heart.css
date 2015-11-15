@@ -10,7 +10,7 @@ a {
 }
 /* begin switch styles */
 [data-component-type=animation] {
-
+	position:relative;
 }
 .heart.small {
 	width:5em;
@@ -20,6 +20,9 @@ a {
 .circles {
 	width:1.5em;
 	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
 }
 .circles .circle:nth-child(1) {
 	height:1em;
@@ -52,6 +55,27 @@ a {
 	animation-fill-mode:forwards;
 }
 
-@-webkit-keyframes fade_move_circles { from { opacity:0; } to { opacity:100;}  }
-@-moz-keyframes fade_move_circles { from { opacity:0; } to { opacity:100; }  }
-@keyframes fade_move_circles { from { opacity:0; } to { opacity:100; }  }
+@-webkit-keyframes fade_move_circles { 
+	from { 
+		opacity:0;
+	} 
+	to {
+		opacity:100;
+	}
+}
+@-moz-keyframes fade_move_circles { 
+	from { 
+		opacity:0;
+	} 
+	to {
+		opacity:100;
+	}
+}
+@keyframes fade_move_circles { 
+	from { 
+		opacity:0;
+	} 
+	to {
+		opacity:100;
+	}
+}
