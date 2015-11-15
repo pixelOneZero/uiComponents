@@ -9,7 +9,6 @@ var Switch = (function() {
  			eleSwitches[a].addEventListener('click', function() {
  				this.className = this.className.replace('on',' ').replace(' off','');
  				this.state = this.state === 'on' ? 'off' : 'on';
- 				console.log('this.className = ' + this.className + ", this.state = " + this.state);
  				this.className += ' ' + this.state;
  			});
  		}
