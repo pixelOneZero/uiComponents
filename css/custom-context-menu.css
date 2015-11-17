@@ -1,0 +1,14 @@
+html {
+		font-family:Helvetica, Sans-serif;
+		font-size:12px;
+	}
+p {
+	margin:5em;
+}
+a {
+	color:#000;
+}
+/* begin switch styles */
+[data-component-type=custom-context-menu] {
+	
+}
