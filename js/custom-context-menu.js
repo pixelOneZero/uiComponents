@@ -4,17 +4,23 @@ var CustomContextMenu = (function() {
  		var eleCustomContextMenu = document.querySelector('.custom-context-menu');
  		var eleBody = document.querySelector('body');
  		eleBody.addEventListener("contextmenu", function(e) {
- 			console.log('contextmenu event occurred');
  			e.preventDefault();
+ 			eleCustomContextMenu.style.left = e.clientX - 10 + "px";
+ 			eleCustomContextMenu.style.top = e.clientY - 15 + "px";
+ 			eleCustomContextMenu.style.display = "block";
  		});
- 		eleBody.addEventListener("click", function(e){
- 			var eleTarget = e.target;
- 			if (eleTarget.getAttribute("data-component-type") !== "custom-context-menu") {
- 				eleCustomContextMenu.style.display = "none";
+ 		eleBody.addEventListener("mouseout", function(e) {
+ 			if (e.target.tagName === "NAV") {
+ 				e.target.style.display = "none";
  			}
  		});
- 		eleCustomContextMenu.addEventListener("mouseout", function() {
- 			this.style.display = "none";
+ 		eleBody.addEventListener("click", function(e) {
+ 			if (e.target.tagName !== "NAV" || e.target.parentElement.tagName !== "NAV") {
+ 				eleCustomContextMenu.style.display = "none";
+ 			}
+ 		})
+ 		eleCustomContextMenu.addEventListener("mouseover", function(e){
+ 			eleCustomContextMenu.style.display = "block";
  		})
  	}
 

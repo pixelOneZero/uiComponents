@@ -14,16 +14,13 @@ a {
 	color:#000;
 }
 /* begin switch styles */
-[data-component-type=custom-context-menu] {
-	
-}
-
 .custom-context-menu {
 	position:absolute;
 	background:#eee;
-	padding:.5em 0 .5em 0;
+	padding:1em;
 	top:0;
 	left:0;
+	display:none;
 }
 
 .custom-context-menu ul {
