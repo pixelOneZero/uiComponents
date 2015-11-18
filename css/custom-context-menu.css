@@ -5,6 +5,7 @@ html {
 
 body {
 	position:relative;
+	background:#fafafa;
 }
 
 p {
@@ -16,7 +17,7 @@ a {
 /* begin switch styles */
 .custom-context-menu {
 	position:absolute;
-	background:#eee;
+	background:#e7e7e7;
 	padding:1em;
 	top:0;
 	left:0;
@@ -30,7 +31,7 @@ a {
 }
 
 .custom-context-menu ul li {
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid #d5d5d5;
 	padding:.75em 4em .75em 2em;
 }
 
