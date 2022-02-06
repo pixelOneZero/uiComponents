@@ -1,43 +1,10 @@
 html {
-	font-family:Helvetica, Sans-serif;
-	font-size:12px;
-	font-weight:300;
-	color:#333;
+	font-family: Helvetica, Sans-serif;
+	font-size: 1em;
+	padding: 1em;
 }
 
-a {
-	color:#333;
-}
-
-li {
-	line-height:2em;
-}
-
-.collapsed {
-	position:relative;
-	height:100px;
-	overflow:hidden;
-}
-.collapsed div {
-	position:absolute;
-	bottom:0;
-}
-
-.button {
-	position: absolute;
-	text-align: center;
-	width:100%;
-	cursor: pointer;
-	height:30px;
-	background: rgba(240, 240, 240, 0.9);
-	font-size:1.25em;
-	line-height:30px;
-}
-
-#coordinates {
-	font-size:1.5em;
-	line-height:1.5em;
-}
-#coordinates span {
-	color:blue;
+.timer {
+	font-family: monospace;
+	font-size: 3em;
 }
