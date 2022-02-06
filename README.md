@@ -1,13 +1,7 @@
 uiComponents
 ============
 
-UI Components
+A timer component.
 
-A collection of native JavaScript and AngularJs user interface components.
-
-* View More/Less
-* Geo-location
-* Tooltip
-* Modal
-* Mobile-web navigation
-* 
+To run locally:
+http-server
